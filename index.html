@@ -150,14 +150,13 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16/9;
-    background: var(--black3);
+    background: #000;
     border: 1px solid var(--border-strong);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 16px;
-    cursor: pointer;
     overflow: hidden;
   }
 
@@ -632,23 +631,19 @@
   <p class="hero-sub">We help personal brands and online businesses scale to £25K–£100K/month through performance-based growth operations. Not flat retainers. Real results.</p>
 
   <div class="video-wrap">
-    <div class="video-box" style="background:#000;">
+    <div class="video-box" style="padding:0; border: 1px solid var(--border-strong); overflow:hidden;">
       <div class="video-corner tl"></div>
       <div class="video-corner tr"></div>
       <div class="video-corner bl"></div>
       <div class="video-corner br"></div>
-      <video
-        id="vsl"
-        controls
-        playsinline
-        preload="metadata"
-        style="width:100%; height:100%; object-fit:cover; display:block; position:relative; z-index:1;"
-        poster=""
-      >
-        <source src="vsl.mov" type="video/quicktime" />
-        <source src="vsl.mov" type="video/mp4" />
-        Your browser does not support this video.
-      </video>
+      <iframe
+        src="https://www.youtube.com/embed/kT0NLi9j9QU?rel=0&modestbranding=1&color=white"
+        title="How We Scale Personal Brands to £25K–£100K/Month"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"
+      ></iframe>
     </div>
   </div>
 
